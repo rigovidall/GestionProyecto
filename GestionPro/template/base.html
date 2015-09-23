@@ -40,7 +40,7 @@
 
             <div id="tab2" class="tabcontent">
             	<ul>
-                    <li><a href="{% url 'usuario.views.nuevo_user' %}">Crear Usuario</a></li>
+                    <li><a href="{% url 'registrar_usuario' %}">Crear Usuario</a></li>
                     <li><a href="{% url 'usuario_lista' %}">Listar Usuarios</a></li>
                 </ul>
             </div>
@@ -53,7 +53,7 @@
             <div id="tab4" class="tabcontent">
             	<ul>
                     <li><a href="{% url 'usuario.views.cerrar_sesion' %}">Cerrar Sesion</a></li>
-                    <li><a href="{% url 'cambio_clave' user.id %}">Cambiar Contraseña</a></li>
+                    <li><a href="{% url 'cambio_clave' %}">Cambiar Contraseña</a></li>
                 </ul>
             </div>
 
@@ -66,9 +66,9 @@
         mypets.init(false)
 </script>
 
-    </div> <!-- end of mneu -->
-    <div id="templatemo_banner">
-
+    </div> <!-- end of menu -->
+    <div>
+        <img src="{{ STATIC_URL }}menu/images/templatemo_banner_bg.jpg" alt="image"/>
     </div>
     {% block cuerpo %}
 	<div id="templatemo_content">

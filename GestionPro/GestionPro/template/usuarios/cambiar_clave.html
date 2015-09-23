@@ -2,15 +2,15 @@
 
 
 {% block title %}
-    Actualizar Usuario
+    Modificación datos de acceso
 {% endblock title %}
 
 {% block titulo %}
-   Modificación de usuario
+   Cambio de Contraseña
 {% endblock titulo %}
 
 {% block cuerpo %}
-<h1>Modificar Usuario</h1>
+<h1>Cambiar Contraseña</h1>
 <form method="post" class="form">
     {% csrf_token %}
     {% for field in form %}
